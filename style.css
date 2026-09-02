@@ -1,43 +1,69 @@
-body{
-  background-color: seashell;
-  color: maroon;
+body {
+  background-color: #f0f4f8; /* Fundo claro e suave */
+  color: #1a202c; /* Texto escuro para boa leitura */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:50px
+  margin: 50px;
 }
-h1{
+
+h1 {
   font-size: 40px;
   text-align: center;
   font-family: "Molle", cursive;
   font-weight: bold;
+  color: #2b6cb0; /* Azul em destaque para o título */
 }
-p{
-  text-align: justify
+
+p {
+  text-align: justify;
 }
-img{
+
+img {
   margin-top: 20px;
   max-width: 80%;
-   }
-a{
-  text-decoration: none;
-  color: maroon;
-  text-align: center;
-}
-a:hover{
-  color: blue;
-}
-body.modo_escuro {
-  background-color: black;
-  color: seashell;
+  border-radius: 8px; /* Cantos levemente arredondados */
 }
 
+a {
+  text-decoration: none;
+  color: #3182ce; /* Azul para links */
+  text-align: center;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #805ad5; /* Roxo ao passar o mouse */
+}
+
+body.modo_escuro {
+  background-color: #1a202c; /* Fundo escuro */
+  color: #e2e8f0; /* Texto claro */
+}
+
+body.modo_escuro h1 {
+  color: #63b3ed; /* Azul claro para o título no modo escuro */
+}
+
+body.modo_escuro a {
+  color: #9f7aea; /* Roxo claro para links no modo escuro */
+}
 
 button {
-  border: 2px solid green;
+  border: 2px solid #3182ce;
   border-radius: 20px;
-  width: 80px;
+  width: 100px; /* Aumentado ligeiramente para caber o texto com folga */
+  padding: 5px;
+  background-color: #ffffff;
+  color: #3182ce;
+  cursor: pointer;
   position: fixed;
   right: 10px;
-  top: 50px
+  top: 50px;
+}
+
+body.modo_escuro button {
+  background-color: #2d3748;
+  color: #ffffff;
+  border-color: #9f7aea;
 }
